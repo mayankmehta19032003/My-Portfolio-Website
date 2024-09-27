@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from './sections/Navbar'
 
 const App = () => {
   return (
-    <div>
-      hello three.js
-    </div>
+    <main className='max-w-7xl mx-auto'>
+     <Navbar/>
+    </main>
   )
 }
 
