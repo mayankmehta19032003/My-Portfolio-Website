@@ -8,6 +8,7 @@ import Target from '../components/Target';
 import ReactLogo from '../components/ReactLogo';
 import Cube from '../components/Cube';
 import Rings from '../components/Rings';
+import HeroCamera from '../components/HeroCamera';
 
 
 
@@ -25,22 +26,23 @@ const Hero = () => {
             <div className='w-full h-full absolute inset-0'>
 
                 <Canvas className="w-full h-full">
-                    <Suspense fallback={<CanvasLoader/>}>
+                    <Suspense fallback={<CanvasLoader />}>
 
                         <PerspectiveCamera makeDeafault postion={[0, 0, 20]} />
-                        <HackerRoom
+                        <HeroCamera isMobile={isMobile}>
+                            <HackerRoom
 
-                            position={[0.1, -1.55, 1.20]}
-                            rotation={[0, -Math.PI, 0]}
-                            scale={isMobile ? 0.0150 : 0.0175}
-                        />
+                                position={[0.1, -1.55, 1.20]}
+                                rotation={[0, -Math.PI, 0]}
+                                scale={isMobile ? 0.0150 : 0.0175}
+                            />
+                        </HeroCamera>
 
                         <group>
-                            <Target position={isMobile ? [1,1, 1]: [3.5, -2, 1.20]} scale={isMobile? 0.2 :0.2} />
-                            
-                            <ReactLogo position={isMobile? [1,1,1] :[3.5, 1.5, 1.20]} />
-                            <Cube position={isMobile? [1,1,1] :[-3.5, -1.5, 1.20]}/>
-                            <Rings position={isMobile? [1,1,1] :[-11.5, 11.5, 1.20]}/>
+                            <Target position={isMobile ? [1, -2.5, 1] : [3.5, -2, 1.20]} scale={isMobile ? 0.2 : 0.2} />
+                            <ReactLogo position={isMobile ? [1, 1, 1] : [3.5, 1.5, 1.20]} />
+                            <Cube position={isMobile ? [-1.25, -2.5, 1] : [-3.5, -1.5, 1.20]} />
+                            <Rings position={isMobile ? [-7, 6, 1] : [-22.5, 10.5, 2.20]} />
                         </group>
 
                         <ambientLight intensity={1} />
@@ -48,6 +50,12 @@ const Hero = () => {
 
                     </Suspense>
                 </Canvas>
+            </div>
+
+            <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
+                <a href='#contact' className='w-fit'>
+                    
+                </a>
             </div>
         </section>
     )
