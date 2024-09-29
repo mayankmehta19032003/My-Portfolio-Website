@@ -9,6 +9,7 @@ import ReactLogo from '../components/ReactLogo';
 import Cube from '../components/Cube';
 import Rings from '../components/Rings';
 import HeroCamera from '../components/HeroCamera';
+import Button from '../components/Button';
 
 
 
@@ -34,7 +35,7 @@ const Hero = () => {
 
                                 position={[0.1, -1.55, 1.20]}
                                 rotation={[0, -Math.PI, 0]}
-                                scale={isMobile ? 0.0150 : 0.0175}
+                                scale={isMobile ? 0.0140 : 0.0175}
                             />
                         </HeroCamera>
 
@@ -54,7 +55,7 @@ const Hero = () => {
 
             <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
                 <a href='#contact' className='w-fit'>
-                    
+                    <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96"  />
                 </a>
             </div>
         </section>
