@@ -19,13 +19,15 @@ const Contact = () => {
         setLoading(true);
 
         try {
-           await emailjs.send("service_5gahivk","template_5mpl578",{
+           await emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          {
                 from_name : form.name,
-                to_name : "Mayank",
+                to_name :process.env.REACT_APP_TO_NAME,
                 from_email: form.email,
-                to_email: "mayankmehta880@gmail.com",
+                to_email:process.env.REACT_APP_TO_EMAIL,
                 message : form.message
-            },"9PEMElnL2g-72GU4Y"
+            }, process.env.REACT_APP_EMAILJS_USER_ID
         )
             setLoading(false);
             setForm({
