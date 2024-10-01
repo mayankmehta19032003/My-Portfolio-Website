@@ -10,7 +10,7 @@ const Target = (props) => {
 
     useGSAP(()=>{
         gsap.to(tagetRef.current.position,{
-            y: tagetRef.current.position.y + 0.5,
+            y: tagetRef.current.position.y + 0.2,
             duration : 1.5,
             repeat:-1,
             yoyo : true
