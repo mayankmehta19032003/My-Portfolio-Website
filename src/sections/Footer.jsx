@@ -9,14 +9,14 @@ const Footer = () => {
         <p>Privacy Policy</p>
     </div>
     <div className='flex gap-3'>
-        <a href='#' className='social-icon'>
+        <a href='https://github.com/mayankmehta19032003' target='_blank' className='social-icon'>
             <img src="/assets/github.svg" alt="github" className='w-1/2 h-1/2'/>
         </a>
-        <a href='#' className='social-icon'>
-            <img src="/assets/instagram.svg" alt="insta" className='w-1/2 h-1/2'/>
+        <a href='https://www.linkedin.com/in/mayank-mehta880/' target='_blank' className='social-icon'>
+            <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="insta"  className='w-1/2 h-1/2'/>
         </a>
-        <a href='#' className='social-icon'>
-            <img src="/assets/twitter.svg" alt="twitter" className='w-1/2 h-1/2'/>
+        <a href='https://x.com/Mayank19032003' target='_blank' className='social-icon'>
+            <img src="https://img.icons8.com/?size=100&id=cMRBi0rI3iwb&format=png&color=000000" alt="twitter" className='w-1/2 h-1/2'/>
         </a>
     </div>
     <p className='text-white-500'>

@@ -46,7 +46,7 @@ const Contact = () => {
     }
 
   return (
-   <section className='c-space my-20'>
+   <section className='c-space my-20' id='contact'>
     <div className='relative min-h-screen flex items-center justify-center flex-col'>
         <img src="/assets/terminal.png" alt="terminal" className='absolute inset-0 min-h-screen' />
         <div className='contact-container'>
@@ -57,7 +57,7 @@ const Contact = () => {
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col border-spacing-y-7'>
             <label className='space-y-3'>
                 <span className='field-label'>Full Name</span>
-                <input type="text" name="name" value={form.name} onChange={handleChange} required className='field-input' placeholder='Enter your name' />
+                <input type="text" name="name" value={form.name} onChange={handleChange} required className='field-input' placeholder="Let us know your name" />
             </label>
             <label className='space-y-3'>
                 <span className='field-label'>Email</span>

@@ -30,7 +30,7 @@ function Navbar() {
             <div className='max-w-7xl mx-auto'>
                 <div className='flex justify-between items-center py-5 mx-auto c-space'>
                     <a href='/' className='text-neutral-400 font-bold text-xl hover:text-white transition-colors' >
-                        Mayank</a>
+                        Portfolio</a>
                     <button onClick={toggleMenu} className='text-neutral-400 sm:hidden hover:text-white focus:outline-none flex' aria-label='Toggle menu'>
                         <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toogle" className='w-6 h-6' />
                     </button>

@@ -20,10 +20,10 @@ const About = () => {
             <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
                 <div className='col-span-1 xl:row-span-3'>
                     <div className='grid-container'>
-                        <img src="/assets/grid1.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain' />
+                        <img src="/assets/profile-photo.png" alt="grid-1" className='w-full rounded-br-full rounded-bl-full sm:h-[276px] h-fit object-contain' />
                         <div>
-                            <p className='grid-headtext'>Hi, I am Mayank</p>
-                            <p className="grid-subtext ">I have honed my skills in frontend and backend development, with a focus on 3D animated websites.</p>
+                            <p className='grid-headtext'>Hi, I'm Mayank mehta</p>
+                            <p className="grid-subtext ">I'm a passionate software developer skilled in both front-end and back-end development. I focus on creating dynamic web applications and specialize in building immersive 3D animated websites. I continually seek to enhance my skills and knowledge.</p>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ const About = () => {
                         <img src="/assets/grid2.png" alt="grid-2" className='w-full self-center sm:w-[276px] h-fit object-contain' />
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
-                            <p className="grid-subtext ">I specialize in React and with a focus on Next.js ecosystem.</p>
+                            <p className="grid-subtext ">I specialize in <b>React</b>, alongside front-end technologies like <b>HTML</b>, <b> CSS</b>, <b>Javascript</b>, and <b>Tailwind CSS</b>. On the back end, I work with <b>Node.js</b>,<b>Express.js</b> , and <b>PostgreSQL</b>, and I’m also proficient in <b>Java</b> and <b>RESTful APIs</b>.</p>
                         </div>
                     </div>
                 </div>
@@ -46,10 +46,10 @@ const About = () => {
                         </div>
                         <div>
                             <p className='grid-headtext'>
-                                I work remotely across most timezones.
+                            Remote Work and Location Flexibility.
                             </p>
-                            <p className='grid-subtext'>I bassed in India, with remote work availabe.</p>
-                            <Button name="Contact Me" isBeam containerClass="w-full mt-10"/>
+                            <p className='grid-subtext'>I am based in India and available for remote work. I am also open to opportunities in the following cities: Jaipur, Noida, Gurugram, Pune, Kota and Bangalore.</p>
+                            <a href="/assets/Mayank-resume.pdf" download="MayankMehta_Resume.pdf"><Button name="Resume" isBeam containerClass="w-full mt-10"/></a>
                         </div> 
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const About = () => {
                         <img src="/assets/grid3.png" alt="grid-3" className='w-full sm:h-[266px] h-fit object-contain' />
                         <div>
                             <p className="grid-headtext">My passion for coding</p>
-                            <p className='grid-subtext'>I love solving problems and building things through code. Coding isn't my profession - it is my passion.</p>
+                            <p className='grid-subtext'>Coding isn't just my job - it's my passion. I love the thrill of problem-solving and turning abstract ideas into tangible results. Every project is a new puzzle, and I'm constantly learning and growing as a developer. The satisfaction of seeing something I've created come to life is incredibly rewarding.</p>
                         </div>
                     </div>
                 </div>
