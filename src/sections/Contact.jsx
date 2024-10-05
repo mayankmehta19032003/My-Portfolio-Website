@@ -1,7 +1,11 @@
 import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser";
+import { useMediaQuery } from "react-responsive";
 
 const Contact = () => {
+
+    const mobileV = useMediaQuery({ maxWidth: 768 });
+
     const formRef = useRef();
     const [loading,setLoading] = useState(false);
     const [form,setForm] = useState({
@@ -48,9 +52,9 @@ const Contact = () => {
   return (
    <section className='c-space my-20' id='contact'>
     <div className='relative min-h-screen flex items-center justify-center flex-col'>
-        <img src="/assets/terminal.png" alt="terminal" className='absolute inset-0 min-h-screen' />
+     {mobileV? null: <img src="/assets/terminal.png" alt="terminal" className='absolute inset-0 min-h-screen'/>}  
         <div className='contact-container'>
-        <h3 className='head-text'>Let's talk</h3>
+        <h3 className='head-text mt-10'>Let's talk</h3>
         <p className='text-lg text-white-600 mt-3'>
             Whether your looking to build a new website, improve your existing pllatform, or bring a unique project, I'm here to help.
         </p>
