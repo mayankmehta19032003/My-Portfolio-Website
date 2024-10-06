@@ -2,15 +2,6 @@
 
 A **Portfolio Website** built using **React** and **Vite**, showcasing my work and skills in a visually appealing manner. This project features interactive 3D models using **Three.js** and smooth animations powered by **GSAP**.
 
-## Table of Contents
-
-- [Demo](https://my-portfolio-website-nine-ivory.vercel.app/)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [EmailJS Integration](#emailjs-integration)
-- [Acknowledgments](#acknowledgments)
-
 ## Demo 🌟
 
 You can view the live demo of the project [here](https://my-portfolio-website-nine-ivory.vercel.app/).
@@ -52,9 +43,13 @@ To get a local copy up and running, follow these steps:
 
 4. **Set up environment variables**:
    - Create a `.env` file in the root of your project.
-   - Add your EmailJS user ID (replace the placeholder with your actual value):
-     ```
-     VITE_EMAILJS_USER_ID=your-emailjs-user-id
+   - Add your EmailJS details like so:
+     ```plaintext
+     REACT_APP_EMAILJS_SERVICE_ID=your-service-id
+     REACT_APP_EMAILJS_TEMPLATE_ID=your-template-id
+     REACT_APP_EMAILJS_USER_ID=your-user-id
+     REACT_APP_TO_EMAIL=your-email@example.com
+     REACT_APP_TO_NAME=YourName
      ```
 
 5. **Start the development server**:
@@ -77,7 +72,7 @@ This project uses **EmailJS** to send emails from the contact form. To integrate
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAILJS_USER_ID)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -85,7 +80,8 @@ This project uses **EmailJS** to send emails from the contact form. To integrate
             });
     };
     ```
-4. Replace `'YOUR_SERVICE_ID'`, `'YOUR_TEMPLATE_ID'`, and `'YOUR_USER_ID'` with the corresponding values from your EmailJS account.
+
+4. Replace `'your-service-id'`, `'your-template-id'`, and `'your-user-id'` with the corresponding values from your EmailJS account.
 
 ## Acknowledgments 🙌
 
@@ -94,3 +90,5 @@ This project uses **EmailJS** to send emails from the contact form. To integrate
 - And to [EmailJS](https://www.emailjs.com/) for their easy-to-use email sending service!
 
 Feel free to explore the project and reach out for any questions or collaborations!
+
+
