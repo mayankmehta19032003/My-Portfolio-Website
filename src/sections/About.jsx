@@ -49,7 +49,7 @@ const About = () => {
                             Remote Work and Location Flexibility.
                             </p>
                             <p className='grid-subtext'>I am based in India and available for remote work. I am also open to opportunities in the following cities: Jaipur, Noida, Gurugram, Pune, Kota and Bangalore.</p>
-                            <a href="/assets/Mayank-resume.pdf" download="MayankMehta_Resume.pdf"><Button name="Resume" isBeam containerClass="w-full mt-10"/></a>
+                            <a href="/assets/Mayank-mehta-resume.pdf" download="MayankMehta_Resume.pdf"><Button name="Resume" isBeam containerClass="w-full mt-10"/></a>
                         </div> 
                     </div>
                 </div>
