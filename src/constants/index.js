@@ -95,13 +95,13 @@ export const navLinks = [
       ],
     },
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+      title: 'Greenify - A tour booking app',
+      desc: 'Greenify is a nature-focused website that offers exciting outdoor tours for adventurous people. Explore the beauty of nature and embark on unforgettable journeys.',
       subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        'Greenify is a user-friendly tour booking website interface created using HTML, CSS, and SASS. The project aims to provide a seamless experience for travelers looking to discover and book exciting tours effortlessly.',
+      href: 'https://greenify-pink-three.vercel.app/',
       texture: '/textures/project/project2.mp4',
-      logo: '/assets/project-logo2.png',
+      logo: '/assets/greenify-logo.png',
       logoStyle: {
         backgroundColor: '#13202F',
         border: '0.2px solid #17293E',
@@ -111,23 +111,23 @@ export const navLinks = [
       tags: [
         {
           id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
+          name: 'Html',
+          path: 'https://cdn-icons-png.flaticon.com/128/1051/1051277.png',
         },
         {
           id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
+          name: 'CSS',
+          path: 'https://cdn-icons-png.flaticon.com/128/732/732190.png',
         },
         {
           id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
+          name: 'Sass',
+          path: 'https://img.icons8.com/?size=48&id=QBqFNfPPB2Kx&format=png',
         },
         {
           id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
+          name: 'Npm',
+          path: 'https://img.icons8.com/?size=48&id=24895&format=png',
         },
       ],
     },
